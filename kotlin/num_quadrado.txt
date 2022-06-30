@@ -1,0 +1,13 @@
+fun main() {
+
+
+
+  val num: Int = 5
+
+  val q = num * num
+
+    
+
+  println("$num ao quadrado é igual a $q!")
+
+}

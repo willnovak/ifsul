@@ -1,0 +1,47 @@
+fun main() {
+
+
+
+  var num: Int
+
+  num = readLine()!!.toInt()
+
+
+
+  var count: Int = 0
+
+
+
+  println("Primeiros 10 números pares maiores que $num:")
+
+  
+
+  while(count < 10){
+
+
+
+    num = num + 1
+
+    
+
+    if(num % 2 == 0){
+
+
+
+      count++
+
+
+
+      println(num)
+
+      
+
+    }
+
+    
+
+  }
+
+  
+
+}

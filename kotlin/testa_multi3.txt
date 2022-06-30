@@ -1,0 +1,23 @@
+fun main() {
+
+
+
+  val num: Int = 18
+
+
+
+  if(num % 3 == 0){
+
+    println("$num é múltiplo de 3!")
+
+  }
+
+  else{
+
+    println("$num não é múltiplo de 3!")
+
+  }
+
+  
+
+}

@@ -1,0 +1,25 @@
+fun main() {
+
+
+
+  val res = Multiplicar(9, 7)
+
+  
+
+  println("A multiplicação de 9 x 7 é igual a $res!")
+
+  
+
+}
+
+
+
+fun Multiplicar(num1: Int, num2: Int): Int {
+
+  
+
+  return num1 * num2
+
+  
+
+}

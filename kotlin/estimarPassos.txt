@@ -1,0 +1,45 @@
+import kotlin.math.roundToInt
+
+
+
+fun main() {
+
+
+
+  println("Informe a distância a ser percorrida (Km): ")
+
+  var dist: Float
+
+  dist = readLine()!!.toFloat()
+
+
+
+  println("Informe a distância média percorrida por passo (Cm): ")
+
+  var dist_pas: Float
+
+  dist_pas = readLine()!!.toFloat()
+
+  
+
+  val totPassos = EstimarPassos(dist, dist_pas)
+
+  
+
+  println("A estimativa de passos dados para percorrer o percurso de $dist Km com um passo médio de $dist_pas Cm é de $totPassos!")
+
+  
+
+}
+
+
+
+fun EstimarPassos(per: Float, pas: Float): Int {
+
+
+
+  return ((per * 100000) / pas).roundToInt()
+
+  
+
+}
