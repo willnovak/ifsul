@@ -1,3 +1,5 @@
+# 3 – Faça um programa em python que receba do usuário 10 números aleatórios inteiros. Ao final do programa deve aparecer uma mensagem indicando qual maior e menor número digitado.
+
 maior = 0
 menor = 0
 

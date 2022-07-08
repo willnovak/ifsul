@@ -1,3 +1,5 @@
+# 5 – Faça um programa em Python que receba 2 números inteiros e positivos e mostre todos os números primos entre estes 2 números
+
 n1 = int(input('Informe um número inteiro e positivo: '))
 n2 = int(input('Informe um número inteiro e positivo: '))
 

@@ -1,3 +1,5 @@
+# 4 – Faça um programa em Python que receba um número inteiro e positivo e mostre se ele é primo ou não.
+
 n1 = int(input('Informe um número inteiro e positivo: '))
 primo = True
 
