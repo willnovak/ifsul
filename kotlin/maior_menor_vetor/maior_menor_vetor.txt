@@ -1,0 +1,37 @@
+fun main() {
+  val vetor = arrayOf<Int>(99, 23, 44, 62, 21, 6, 30, 58)
+
+  val menor = encontrarMenor(vetor)
+  val maior = encontrarMaior(vetor)
+  
+  println("Menor valor: $menor")
+  println("Maior valor: $maior")
+}
+
+fun encontrarMenor(arr: Array<Int>): Int {
+  var menor: Int = 0
+  
+  for (x in arr.indices){
+
+    if (x == 0 || arr[x] < menor){
+      menor = arr[x]
+    }
+    
+  }
+
+  return menor
+}
+
+fun encontrarMaior(arr: Array<Int>): Int {
+  var maior: Int = 0
+  
+  for (x in arr.indices){
+
+    if (x == 0 || arr[x] > maior){
+      maior = arr[x]
+    }
+    
+  }
+
+  return maior
+}
