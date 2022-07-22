@@ -1,0 +1,29 @@
+fun main() {
+
+  var nota1: Float
+  var nota2: Float
+  
+  do{
+    println("Informe a nota da avaliação 1:")
+    nota1 = readLine()!!.toFloat()
+
+    if(nota1 < 0 || nota1 > 10){
+      println("Informe uma nota válida! (0 - 10)")
+    }
+  } while(nota1 < 0.0 || nota1 > 10.0)
+
+  do{
+    println("Informe a nota da avaliação 2:")
+    nota2 = readLine()!!.toFloat()
+
+    if(nota2 < 0 || nota2 > 10){
+      println("Informe uma nota válida! (0 - 10)")
+    }
+  } while(nota2 < 0.0 || nota2 > 10.0)
+
+  var media = (nota1 + nota2) / 2
+  media = "%.1f".format(media).toFloat()
+
+  println("A sua média da Etapa I é $media")
+  
+}

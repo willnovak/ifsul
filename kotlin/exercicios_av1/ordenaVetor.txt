@@ -1,0 +1,70 @@
+fun main() {
+  
+  val vet = IntArray(10)
+  var posicao: Int = 0
+
+  while (posicao <= vet.size - 1){
+    
+    println("Informe um número inteiro positivo:")
+    var num: Int
+    num = readLine()!!.toInt()
+
+    while (num < 0){
+      println("Número inválido! Informe um número positivo:")
+      num = readLine()!!.toInt()
+    }
+
+    vet[posicao] = num
+    posicao = posicao + 1
+    
+  }
+
+  print("Vetor Digitado:")
+  for(v in vet.indices){
+    var y: Int = vet[v]
+    print(" $y")
+  }
+
+  val vetOrd = ordenaVetor(vet)
+
+  println("")
+  print("Vetor Ordenado:")
+  for(v in vetOrd.indices){
+    var y: Int = vetOrd[v]
+    print(" $y")
+  }
+  
+}
+
+fun ordenaVetor(arr: IntArray): IntArray {
+
+  var troca = 1
+
+  while (troca == 1){
+
+    troca = 0
+
+    for(x in arr.indices){
+
+      if (x != 9){
+
+        var pos1: Int = arr[x]
+        var pos2: Int = arr[x + 1]
+      
+        if(pos1 < pos2){
+          
+          arr[x] = pos2
+          arr[x + 1] = pos1
+          troca = 1
+        
+        }
+        
+      }
+    
+    }
+    
+  }
+
+  return arr
+  
+}

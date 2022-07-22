@@ -1,0 +1,33 @@
+fun main() {
+
+  
+
+  println("Informe um ano: ")
+
+  var ano: Int
+
+  ano = readLine()!!.toInt()
+
+
+
+  if(ano % 400 == 0 && ano % 100 == 0){
+
+    println("O ano $ano é bissexto!")
+
+  }
+
+  else if(ano % 4 == 0 && ano % 100 != 0){
+
+    println("O ano $ano é bissexto!")
+
+  }
+
+  else{
+
+    println("O ano $ano não é bissexto!")
+
+  }
+
+  
+
+}

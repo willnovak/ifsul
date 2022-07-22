@@ -1,0 +1,41 @@
+fun main() {
+  
+  val vet = IntArray(10)
+  var posicao: Int = 0
+
+  while (posicao <= vet.size - 1){
+    
+    println("Informe um número inteiro positivo:")
+    var num: Int
+    num = readLine()!!.toInt()
+
+    while (num < 0){
+      println("Número inválido! Informe um número positivo:")
+      num = readLine()!!.toInt()
+    }
+
+    vet[posicao] = num
+    posicao = posicao + 1
+    
+  }
+
+  val count = contarImpares(vet)
+  println("Foram informados $count números ímpares no vetor!")
+  
+}
+
+fun contarImpares(arr: IntArray): Int {
+
+  var impares: Int = 0
+  
+  for(x in arr.indices){
+    
+    if(arr[x] % 2 != 0){
+      impares++
+    }
+    
+  }
+
+  return impares
+  
+}
