@@ -9,7 +9,11 @@
 </head>
 <body>
     <div id="postagem">
-        <input type="text" id="item" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+        <form action="" id="form">
+            <input type="text" id="item" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+            <button type="submit" onclick="validaForm(this)">Enviar Formulário</button>
+        </form>
+        <br>
         <button id="botao" onclick="addImg()">Ver Imagem</button>
         <button id="btn2" onclick="removeImg()">Esconder Imagem</button>
     </div>

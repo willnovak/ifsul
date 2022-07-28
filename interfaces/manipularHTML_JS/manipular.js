@@ -81,3 +81,24 @@ function trocaCor(id){
 function tiraCor(id){
     id.style.backgroundColor = 'lightgreen';
 }
+
+// -----------------------------------------------------------------------------------------------------------------------------
+// Valida se formulário foi preenchido
+// -----------------------------------------------------------------------------------------------------------------------------
+function validaForm(btn) {
+    // Pega o campo e o formulario pelo ID
+    var campo = document.getElementById('item');
+    var form  = document.getElementById('form');
+
+    // No submit do Form executa função
+    form.onsubmit = function(e) {
+        if (campo.value === ''){
+
+            // Se o campo estiver nulo previne de setar valor default e dispara alert
+            e.preventDefault();
+            alert('Formulário não preenchido!');
+            
+        }
+    }
+
+}
