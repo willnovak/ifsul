@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>jQuery</title>
+</head>
+<body>
+    <p>teste</p>
+    <p id="p2">teste2</p>
+    <p>teste3</p>
+
+    <input type="text" name="" id="n1">
+    <button id="btn">Botão</button>
+
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '150px',
+                    width: '150px'
+                });
+            });
+
+            console.log($("#p2").text());
+
+            $("#btn").click(function(){
+                var p = $("<p></p>").text($("#n1").val())
+                $("body").append(p)
+            });
+        });
+    </script>
+</body>
+</html>
